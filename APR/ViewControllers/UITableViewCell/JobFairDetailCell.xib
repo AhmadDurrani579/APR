@@ -1,0 +1,160 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GT-Eesti-Pro-Display-Medium.ttf">
+            <string>GTEestiProDisplay-Medium</string>
+        </array>
+        <array key="GT-Eesti-Pro-Display-Regular.ttf">
+            <string>GTEestiProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="JobFairDetailCell" rowHeight="468" id="KGk-i7-Jjw" customClass="JobFairDetailCell" customModule="APR" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="468"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="468"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="V85-Ig-MTq" customClass="CardView" customModule="APR" customModuleProvider="target">
+                        <rect key="frame" x="16" y="15" width="288" height="150"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="G6w-8O-TlB">
+                                <rect key="frame" x="0.0" y="0.0" width="288" height="150"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="string" keyPath="layer.cornerRadius" value="5"/>
+                                </userDefinedRuntimeAttributes>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="150" id="1iW-sa-97R"/>
+                            <constraint firstAttribute="bottom" secondItem="G6w-8O-TlB" secondAttribute="bottom" id="1io-3w-jZe"/>
+                            <constraint firstAttribute="trailing" secondItem="G6w-8O-TlB" secondAttribute="trailing" id="4jb-kC-8ky"/>
+                            <constraint firstItem="G6w-8O-TlB" firstAttribute="top" secondItem="V85-Ig-MTq" secondAttribute="top" id="S3Z-09-5ek"/>
+                            <constraint firstItem="G6w-8O-TlB" firstAttribute="leading" secondItem="V85-Ig-MTq" secondAttribute="leading" id="gHG-cu-vDl"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="a49-GM-RyY">
+                        <rect key="frame" x="21" y="177" width="278" height="28"/>
+                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Medium" family="GT Eesti Pro Display" pointSize="24"/>
+                        <color key="textColor" red="0.19215686269999999" green="0.20784313730000001" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Ahk-jn-m2O">
+                        <rect key="frame" x="21" y="235" width="44" height="44"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="44" id="aIv-RY-gF2"/>
+                            <constraint firstAttribute="width" constant="44" id="kCv-cC-xWq"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="q80-cq-em4">
+                        <rect key="frame" x="77" y="248.5" width="222" height="17.5"/>
+                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Regular" family="GT Eesti Pro Display" pointSize="15"/>
+                        <color key="textColor" red="0.19215686269999999" green="0.20784313730000001" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="fAJ-fa-nmm">
+                        <rect key="frame" x="32" y="313" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="Sd2-ik-zdi"/>
+                            <constraint firstAttribute="height" constant="22" id="dZR-WQ-VMf"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="xkf-MO-NKN">
+                        <rect key="frame" x="77" y="313" width="219" height="22.5"/>
+                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Medium" family="GT Eesti Pro Display" pointSize="19"/>
+                        <color key="textColor" red="0.19215686269999999" green="0.20784313730000001" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="DHV-S2-JmG">
+                        <rect key="frame" x="77" y="343" width="219" height="17.5"/>
+                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Medium" family="GT Eesti Pro Display" pointSize="15"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="calendar" translatesAutoresizingMaskIntoConstraints="NO" id="u9K-uu-ThG">
+                        <rect key="frame" x="32" y="382" width="22" height="22"/>
+                        <constraints>
+                            <constraint firstAttribute="width" constant="22" id="Ky6-vt-PsG"/>
+                            <constraint firstAttribute="height" constant="22" id="SBG-AK-m9G"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Hf4-nQ-2qz">
+                        <rect key="frame" x="77" y="381.5" width="219" height="22.5"/>
+                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Medium" family="GT Eesti Pro Display" pointSize="19"/>
+                        <color key="textColor" red="0.19215686269999999" green="0.20784313730000001" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="sPG-BT-rgP">
+                        <rect key="frame" x="77" y="411.5" width="219" height="17.5"/>
+                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Medium" family="GT Eesti Pro Display" pointSize="15"/>
+                        <color key="textColor" white="0.66666666669999997" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="sPG-BT-rgP" firstAttribute="leading" secondItem="Hf4-nQ-2qz" secondAttribute="leading" id="0gx-67-9zD"/>
+                    <constraint firstItem="q80-cq-em4" firstAttribute="centerY" secondItem="Ahk-jn-m2O" secondAttribute="centerY" id="2m0-JU-PQh"/>
+                    <constraint firstItem="Ahk-jn-m2O" firstAttribute="leading" secondItem="a49-GM-RyY" secondAttribute="leading" id="3Bp-OJ-fqO"/>
+                    <constraint firstItem="fAJ-fa-nmm" firstAttribute="centerX" secondItem="Ahk-jn-m2O" secondAttribute="centerX" id="7Od-EI-9Ov"/>
+                    <constraint firstItem="Hf4-nQ-2qz" firstAttribute="trailing" secondItem="DHV-S2-JmG" secondAttribute="trailing" id="HqJ-V9-6BS"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="xkf-MO-NKN" secondAttribute="trailing" constant="8" id="MPb-qi-xyn"/>
+                    <constraint firstItem="sPG-BT-rgP" firstAttribute="top" secondItem="Hf4-nQ-2qz" secondAttribute="bottom" constant="7.5" id="Mfv-1C-e10"/>
+                    <constraint firstItem="u9K-uu-ThG" firstAttribute="leading" secondItem="fAJ-fa-nmm" secondAttribute="leading" id="Q2v-hN-EqC"/>
+                    <constraint firstItem="a49-GM-RyY" firstAttribute="top" secondItem="V85-Ig-MTq" secondAttribute="bottom" constant="12" id="RAl-TT-bxX"/>
+                    <constraint firstItem="fAJ-fa-nmm" firstAttribute="top" secondItem="Ahk-jn-m2O" secondAttribute="bottom" constant="34" id="RdI-xg-GIb"/>
+                    <constraint firstItem="Hf4-nQ-2qz" firstAttribute="centerY" secondItem="u9K-uu-ThG" secondAttribute="centerY" id="UaB-KK-krH"/>
+                    <constraint firstAttribute="trailingMargin" secondItem="a49-GM-RyY" secondAttribute="trailing" constant="5" id="Vm0-pn-myZ"/>
+                    <constraint firstItem="q80-cq-em4" firstAttribute="trailing" secondItem="a49-GM-RyY" secondAttribute="trailing" id="a0L-a1-QVL"/>
+                    <constraint firstItem="V85-Ig-MTq" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="15" id="b5K-pj-PLN"/>
+                    <constraint firstItem="V85-Ig-MTq" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="16" id="evf-2f-vDN"/>
+                    <constraint firstItem="xkf-MO-NKN" firstAttribute="leading" secondItem="fAJ-fa-nmm" secondAttribute="trailing" constant="23" id="gwS-Ks-VP8"/>
+                    <constraint firstItem="sPG-BT-rgP" firstAttribute="trailing" secondItem="Hf4-nQ-2qz" secondAttribute="trailing" id="iIh-1g-RPI"/>
+                    <constraint firstItem="DHV-S2-JmG" firstAttribute="top" secondItem="xkf-MO-NKN" secondAttribute="bottom" constant="7.5" id="iN8-Ur-oyJ"/>
+                    <constraint firstItem="Hf4-nQ-2qz" firstAttribute="leading" secondItem="u9K-uu-ThG" secondAttribute="trailing" constant="23" id="jOH-rr-x2F"/>
+                    <constraint firstItem="q80-cq-em4" firstAttribute="leading" secondItem="Ahk-jn-m2O" secondAttribute="trailing" constant="12" id="kWp-8p-Y2h"/>
+                    <constraint firstItem="DHV-S2-JmG" firstAttribute="leading" secondItem="xkf-MO-NKN" secondAttribute="leading" id="nxw-8I-vcP"/>
+                    <constraint firstItem="u9K-uu-ThG" firstAttribute="top" secondItem="DHV-S2-JmG" secondAttribute="bottom" constant="21.5" id="oXy-qy-ozX"/>
+                    <constraint firstItem="xkf-MO-NKN" firstAttribute="centerY" secondItem="fAJ-fa-nmm" secondAttribute="centerY" id="pMK-Qm-v4M"/>
+                    <constraint firstAttribute="trailing" secondItem="V85-Ig-MTq" secondAttribute="trailing" constant="16" id="rfH-ZQ-h1W"/>
+                    <constraint firstItem="a49-GM-RyY" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leadingMargin" constant="5" id="tfE-RA-TZW"/>
+                    <constraint firstItem="DHV-S2-JmG" firstAttribute="trailing" secondItem="xkf-MO-NKN" secondAttribute="trailing" id="uDV-Bd-Tmp"/>
+                    <constraint firstItem="Ahk-jn-m2O" firstAttribute="top" secondItem="a49-GM-RyY" secondAttribute="bottom" constant="30" id="x3D-V7-8bu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="imgOfCompany" destination="Ahk-jn-m2O" id="waP-FQ-mcX"/>
+                <outlet property="imgOfJob" destination="G6w-8O-TlB" id="Vxd-4c-vEd"/>
+                <outlet property="lblAddressSubTitle" destination="sPG-BT-rgP" id="XDg-mw-2bR"/>
+                <outlet property="lblAddressTitle" destination="Hf4-nQ-2qz" id="O4c-NX-JOt"/>
+                <outlet property="lblCompanyName" destination="q80-cq-em4" id="efc-1b-F1X"/>
+                <outlet property="lblDate" destination="xkf-MO-NKN" id="lcc-NY-0Qx"/>
+                <outlet property="lblJobTitle" destination="a49-GM-RyY" id="fUd-G6-tNS"/>
+                <outlet property="lblStartTimeAndEndTime" destination="DHV-S2-JmG" id="4J0-aV-qXm"/>
+            </connections>
+            <point key="canvasLocation" x="110.14492753623189" y="135.26785714285714"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="calendar" width="16" height="16"/>
+    </resources>
+</document>

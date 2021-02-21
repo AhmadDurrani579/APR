@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GT-Eesti-Pro-Display-Regular.ttf">
+            <string>GTEestiProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="JobTypeHeaderCell" rowHeight="166" id="KGk-i7-Jjw" customClass="JobTypeHeaderCell" customModule="APR" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="166"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="166"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cZN-Nt-YUI">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="166"/>
+                        <subviews>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="swipe" translatesAutoresizingMaskIntoConstraints="NO" id="aa2-73-7N2">
+                                <rect key="frame" x="135" y="25" width="50" height="61"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="CfL-JA-yRh"/>
+                                    <constraint firstAttribute="height" constant="61" id="bJA-yj-wrP"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="What type of jobs are you open to ?" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="QN3-jw-fEJ">
+                                <rect key="frame" x="12" y="91" width="296" height="17.5"/>
+                                <fontDescription key="fontDescription" name="GTEestiProDisplay-Regular" family="GT Eesti Pro Display" pointSize="15"/>
+                                <color key="textColor" white="0.33333333333333331" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Select all the job types that suits your need and schedule. " textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="kaZ-Bp-LwS">
+                                <rect key="frame" x="12" y="124" width="296" height="32.5"/>
+                                <fontDescription key="fontDescription" name="GTEestiProDisplay-Regular" family="GT Eesti Pro Display" pointSize="14"/>
+                                <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstItem="kaZ-Bp-LwS" firstAttribute="trailing" secondItem="QN3-jw-fEJ" secondAttribute="trailing" id="3qy-bD-Yow"/>
+                            <constraint firstItem="aa2-73-7N2" firstAttribute="centerX" secondItem="cZN-Nt-YUI" secondAttribute="centerX" id="8kf-sz-rpB"/>
+                            <constraint firstItem="QN3-jw-fEJ" firstAttribute="top" secondItem="aa2-73-7N2" secondAttribute="bottom" constant="5" id="9YF-wP-lhK"/>
+                            <constraint firstAttribute="trailing" secondItem="QN3-jw-fEJ" secondAttribute="trailing" constant="12" id="N8C-VE-ULe"/>
+                            <constraint firstItem="aa2-73-7N2" firstAttribute="top" secondItem="cZN-Nt-YUI" secondAttribute="top" constant="25" id="hBs-cp-gIZ"/>
+                            <constraint firstItem="QN3-jw-fEJ" firstAttribute="leading" secondItem="cZN-Nt-YUI" secondAttribute="leading" constant="12" id="mFb-gm-ht1"/>
+                            <constraint firstItem="kaZ-Bp-LwS" firstAttribute="top" secondItem="QN3-jw-fEJ" secondAttribute="bottom" constant="15.5" id="r95-bY-9H5"/>
+                            <constraint firstItem="kaZ-Bp-LwS" firstAttribute="leading" secondItem="QN3-jw-fEJ" secondAttribute="leading" id="zMh-Ov-XUZ"/>
+                        </constraints>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" systemColor="secondarySystemGroupedBackgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <constraints>
+                    <constraint firstAttribute="trailing" secondItem="cZN-Nt-YUI" secondAttribute="trailing" id="ILb-KK-NIL"/>
+                    <constraint firstAttribute="bottom" secondItem="cZN-Nt-YUI" secondAttribute="bottom" id="SpV-Mw-hpU"/>
+                    <constraint firstItem="cZN-Nt-YUI" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="dLJ-tk-BYy"/>
+                    <constraint firstItem="cZN-Nt-YUI" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="zBs-vu-dU3"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <point key="canvasLocation" x="137.68115942028987" y="122.54464285714285"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="swipe" width="341.33334350585938" height="341.33334350585938"/>
+    </resources>
+</document>

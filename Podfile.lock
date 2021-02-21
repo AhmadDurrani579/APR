@@ -1,0 +1,80 @@
+PODS:
+  - ActionSheetPicker-3.0 (2.3.0)
+  - DatePickerDialog (3.0)
+  - GoogleMaps (3.8.0):
+    - GoogleMaps/Maps (= 3.8.0)
+  - GoogleMaps/Base (3.8.0)
+  - GoogleMaps/Maps (3.8.0):
+    - GoogleMaps/Base
+  - GooglePlaces (3.8.0):
+    - GoogleMaps/Base (= 3.8.0)
+  - GrowingTextView (0.7.0)
+  - IQKeyboardManagerSwift (6.0.4)
+  - Koloda (5.0):
+    - pop (~> 1.0)
+  - McPicker (2.0.1)
+  - pop (1.0.12)
+  - RangeSeekSlider (1.8.0)
+  - SDWebImage (3.8.3):
+    - SDWebImage/Core (= 3.8.3)
+  - SDWebImage/Core (3.8.3)
+  - Socket.IO-Client-Swift (15.1.0):
+    - Starscream (~> 3.1)
+  - Starscream (3.1.1)
+  - TagListView (1.4.0)
+  - Toast-Swift (3.0.1)
+
+DEPENDENCIES:
+  - ActionSheetPicker-3.0
+  - DatePickerDialog
+  - GoogleMaps
+  - GooglePlaces
+  - GrowingTextView (= 0.7.0)
+  - IQKeyboardManagerSwift (= 6.0.4)
+  - Koloda
+  - McPicker (~> 2.0.0)
+  - RangeSeekSlider
+  - SDWebImage (~> 3.8)
+  - Socket.IO-Client-Swift (~> 15.1.0)
+  - TagListView (~> 1.0)
+  - Toast-Swift (~> 3.0.1)
+
+SPEC REPOS:
+  https://cdn.cocoapods.org/:
+    - GrowingTextView
+    - Socket.IO-Client-Swift
+    - Starscream
+  https://github.com/CocoaPods/Specs.git:
+    - ActionSheetPicker-3.0
+    - DatePickerDialog
+    - GoogleMaps
+    - GooglePlaces
+    - IQKeyboardManagerSwift
+    - Koloda
+    - McPicker
+    - pop
+    - RangeSeekSlider
+    - SDWebImage
+    - TagListView
+    - Toast-Swift
+
+SPEC CHECKSUMS:
+  ActionSheetPicker-3.0: eef157d75e151f255c5333d26656c7fbfe905a51
+  DatePickerDialog: 03dbb8350bfa80302ab2a8c83cee1fec70184444
+  GoogleMaps: 7c8d66d70e4e8c300f43a7219d8fdaad7b325a9a
+  GooglePlaces: d5f70c3e9e427964fdeca1301a665d276ccd8754
+  GrowingTextView: b946b0d1c33e0953725b9695d14f144cc35b2031
+  IQKeyboardManagerSwift: 36dbe324b4f9793f5f41ba5227f3e7c76dfefd50
+  Koloda: 75302d21882cc3e274c1561b1155805ea5919dab
+  McPicker: a0a6b8ece8f1642e05401a29867463aba501188b
+  pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
+  RangeSeekSlider: 650b11fa1edcb92e1e0ede797669d98622570fb5
+  SDWebImage: a72e880a8fe0f7fc31efe15aaed443c074d2a80c
+  Socket.IO-Client-Swift: 7cb44c0ffb86e158cee32d0642d30ec5fdcf8f61
+  Starscream: 4bb2f9942274833f7b4d296a55504dcfc7edb7b0
+  TagListView: 987b0bdbb16cd9d9e7c0e2ec32aff37ecba8b173
+  Toast-Swift: ba0b01b095aada709d915f9beb1d38184a2721c3
+
+PODFILE CHECKSUM: bb46e5691edd7d55efc53238ffb4eba2a83b7a9b
+
+COCOAPODS: 1.9.3

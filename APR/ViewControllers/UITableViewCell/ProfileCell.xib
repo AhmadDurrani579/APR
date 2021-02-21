@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GT-Eesti-Pro-Display-Bold.ttf">
+            <string>GTEestiProDisplay-Bold</string>
+        </array>
+        <array key="GT-Eesti-Pro-Display-Medium.ttf">
+            <string>GTEestiProDisplay-Medium</string>
+        </array>
+        <array key="GT-Eesti-Pro-Display-Regular.ttf">
+            <string>GTEestiProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="ProfileCell" rowHeight="740" id="VUy-f4-E1j" customClass="ProfileCell" customModule="APR" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="740"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="VUy-f4-E1j" id="Nay-HF-K7v">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="740"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="lAX-Wk-zdo" customClass="CardView" customModule="APR" customModuleProvider="target">
+                        <rect key="frame" x="15" y="30" width="290" height="680"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="cnd-Ma-y3Y" customClass="CardView" customModule="APR" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="0.0" width="290" height="120"/>
+                                <subviews>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="XsC-6M-GCa">
+                                        <rect key="frame" x="28" y="25" width="50" height="50"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="50" id="dtI-aE-YUi"/>
+                                            <constraint firstAttribute="height" constant="50" id="rq3-uN-jRu"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lou Marsh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="a5b-Xb-4F7">
+                                        <rect key="frame" x="99" y="20" width="183" height="26"/>
+                                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Medium" family="GT Eesti Pro Display" pointSize="22"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lou Marsh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="fiM-ZT-9tH">
+                                        <rect key="frame" x="124" y="49" width="158" height="17"/>
+                                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Regular" family="GT Eesti Pro Display" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="map pin white" translatesAutoresizingMaskIntoConstraints="NO" id="EJL-IL-ruT">
+                                        <rect key="frame" x="99" y="50" width="15" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="width" constant="15" id="Gzo-yt-YIn"/>
+                                            <constraint firstAttribute="height" constant="15" id="H94-Ea-JiC"/>
+                                        </constraints>
+                                    </imageView>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Lou Marsh" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="15" translatesAutoresizingMaskIntoConstraints="NO" id="9aE-tT-OBJ">
+                                        <rect key="frame" x="124" y="67.5" width="158" height="20"/>
+                                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Regular" family="GT Eesti Pro Display" pointSize="17"/>
+                                        <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="experience" translatesAutoresizingMaskIntoConstraints="NO" id="6cf-uP-Wuu">
+                                        <rect key="frame" x="99" y="70" width="15" height="15"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="15" id="eFA-cE-LEG"/>
+                                            <constraint firstAttribute="width" constant="15" id="yiV-5R-eLE"/>
+                                        </constraints>
+                                    </imageView>
+                                </subviews>
+                                <color key="backgroundColor" red="0.12941176469999999" green="0.76470588240000004" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstItem="fiM-ZT-9tH" firstAttribute="top" secondItem="a5b-Xb-4F7" secondAttribute="bottom" constant="3" id="2Im-9B-YdJ"/>
+                                    <constraint firstItem="fiM-ZT-9tH" firstAttribute="centerY" secondItem="EJL-IL-ruT" secondAttribute="centerY" id="2lL-sd-j5M"/>
+                                    <constraint firstAttribute="trailing" secondItem="a5b-Xb-4F7" secondAttribute="trailing" constant="8" id="2nB-3T-ak4"/>
+                                    <constraint firstItem="9aE-tT-OBJ" firstAttribute="leading" secondItem="6cf-uP-Wuu" secondAttribute="trailing" constant="10" id="4m9-Vo-MxM"/>
+                                    <constraint firstItem="EJL-IL-ruT" firstAttribute="top" secondItem="a5b-Xb-4F7" secondAttribute="bottom" constant="4" id="Bv3-7x-qMR"/>
+                                    <constraint firstItem="XsC-6M-GCa" firstAttribute="centerY" secondItem="cnd-Ma-y3Y" secondAttribute="centerY" constant="-10" id="DXb-uL-hEb"/>
+                                    <constraint firstItem="9aE-tT-OBJ" firstAttribute="trailing" secondItem="fiM-ZT-9tH" secondAttribute="trailing" id="G93-Q6-Cns"/>
+                                    <constraint firstItem="9aE-tT-OBJ" firstAttribute="centerY" secondItem="6cf-uP-Wuu" secondAttribute="centerY" id="HDH-SP-3NY"/>
+                                    <constraint firstItem="a5b-Xb-4F7" firstAttribute="leading" secondItem="XsC-6M-GCa" secondAttribute="trailing" constant="21" id="HG4-B0-9PE"/>
+                                    <constraint firstItem="fiM-ZT-9tH" firstAttribute="trailing" secondItem="a5b-Xb-4F7" secondAttribute="trailing" id="IWS-4v-Z6d"/>
+                                    <constraint firstAttribute="height" constant="120" id="R7Z-Mi-Znt"/>
+                                    <constraint firstItem="a5b-Xb-4F7" firstAttribute="top" secondItem="cnd-Ma-y3Y" secondAttribute="top" constant="20" id="UVx-gG-5lp"/>
+                                    <constraint firstItem="6cf-uP-Wuu" firstAttribute="leading" secondItem="EJL-IL-ruT" secondAttribute="leading" id="WGO-la-TfY"/>
+                                    <constraint firstItem="fiM-ZT-9tH" firstAttribute="leading" secondItem="EJL-IL-ruT" secondAttribute="trailing" constant="10" id="WxA-rZ-NOu"/>
+                                    <constraint firstItem="EJL-IL-ruT" firstAttribute="leading" secondItem="a5b-Xb-4F7" secondAttribute="leading" id="aYo-zt-Wtd"/>
+                                    <constraint firstItem="XsC-6M-GCa" firstAttribute="leading" secondItem="cnd-Ma-y3Y" secondAttribute="leading" constant="28" id="tgL-IU-ZaL"/>
+                                    <constraint firstItem="6cf-uP-Wuu" firstAttribute="top" secondItem="EJL-IL-ruT" secondAttribute="bottom" constant="5" id="wRV-SA-Ec7"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                        <color key="value" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Product  Designer at Atlassian &amp; Interaction Designer at Google with 4 years Experience" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="3" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="HbS-8R-fjg">
+                                <rect key="frame" x="8" y="140" width="274" height="56"/>
+                                <fontDescription key="fontDescription" name="GTEestiProDisplay-Regular" family="GT Eesti Pro Display" pointSize="16"/>
+                                <color key="textColor" red="0.1960784314" green="0.21176470589999999" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="images" translatesAutoresizingMaskIntoConstraints="NO" id="umo-gY-KNF">
+                                <rect key="frame" x="8" y="216" width="50" height="50"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="50" id="a1Y-mZ-Ig7"/>
+                                    <constraint firstAttribute="height" constant="50" id="sbk-z0-Yah"/>
+                                </constraints>
+                            </imageView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="14" translatesAutoresizingMaskIntoConstraints="NO" id="hSt-lp-QK8">
+                                <rect key="frame" x="64" y="220" width="216" height="0.0"/>
+                                <fontDescription key="fontDescription" name="GTEestiProDisplay-Medium" family="GT Eesti Pro Display" pointSize="18"/>
+                                <color key="textColor" red="0.1960784314" green="0.21176470589999999" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Technolera" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="1Ic-Yp-KzA">
+                                <rect key="frame" x="64" y="222" width="216" height="19"/>
+                                <fontDescription key="fontDescription" name="GTEestiProDisplay-Regular" family="GT Eesti Pro Display" pointSize="16"/>
+                                <color key="textColor" red="0.1960784314" green="0.21176470589999999" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="July 2019 - Present" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="le6-77-lYr">
+                                <rect key="frame" x="64" y="247" width="163.5" height="17"/>
+                                <fontDescription key="fontDescription" name="GTEestiProDisplay-Regular" family="GT Eesti Pro Display" pointSize="14"/>
+                                <color key="textColor" red="0.12941176469999999" green="0.76470588240000004" blue="0.94117647059999998" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2 years" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="Lhg-r1-k6h">
+                                <rect key="frame" x="237.5" y="247" width="42.5" height="17"/>
+                                <fontDescription key="fontDescription" name="GTEestiProDisplay-Regular" family="GT Eesti Pro Display" pointSize="14"/>
+                                <color key="textColor" red="0.66274509800000003" green="0.71764705880000002" blue="0.78039215689999997" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="YQi-0a-2sl">
+                                <rect key="frame" x="0.0" y="286" width="290" height="1"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="vWl-rv-jKL"/>
+                                </constraints>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="User Experience Designer" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="18" translatesAutoresizingMaskIntoConstraints="NO" id="WEa-Km-JdV">
+                                <rect key="frame" x="20" y="299" width="260" height="23.5"/>
+                                <fontDescription key="fontDescription" name="GTEestiProDisplay-Medium" family="GT Eesti Pro Display" pointSize="20"/>
+                                <color key="textColor" red="0.1960784314" green="0.21176470589999999" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" verticalHuggingPriority="251" text="Master of Science - MS , MS MS" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="ife-Pw-8tp">
+                                <rect key="frame" x="20" y="330.5" width="185.5" height="39.5"/>
+                                <fontDescription key="fontDescription" name="GTEestiProDisplay-Regular" family="GT Eesti Pro Display" pointSize="17"/>
+                                <color key="textColor" red="0.1960784314" green="0.21176470589999999" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="2011 - 2013" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" minimumFontSize="12" translatesAutoresizingMaskIntoConstraints="NO" id="H6W-Vj-tsv">
+                                <rect key="frame" x="215.5" y="332.5" width="64.5" height="17"/>
+                                <fontDescription key="fontDescription" name="GTEestiProDisplay-Regular" family="GT Eesti Pro Display" pointSize="15"/>
+                                <color key="textColor" red="0.1960784314" green="0.21176470589999999" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="dgh-kg-MXh">
+                                <rect key="frame" x="0.0" y="390" width="290" height="1"/>
+                                <color key="backgroundColor" systemColor="tertiarySystemGroupedBackgroundColor" red="0.94901960780000005" green="0.94901960780000005" blue="0.96862745100000003" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="1" id="hDB-ef-eiX"/>
+                                </constraints>
+                            </view>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" verticalHuggingPriority="252" verticalCompressionResistancePriority="749" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="Wkb-jX-Ohm" customClass="TagListView" customModule="TagListView">
+                                <rect key="frame" x="8" y="429" width="272" height="96"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" red="0.1960784314" green="0.21176470589999999" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
+                                        <color key="value" red="0.87058823529999996" green="0.89411764709999997" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tagBackgroundColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tagHighlightedBackgroundColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tagSelectedBackgroundColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingY">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingX">
+                                        <real key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="marginY">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="marginX">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Skills" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="dwi-mh-lAr">
+                                <rect key="frame" x="20" y="404" width="34" height="17.5"/>
+                                <fontDescription key="fontDescription" name="GTEestiProDisplay-Bold" family="GT Eesti Pro Display" pointSize="15"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <view userInteractionEnabled="NO" contentMode="scaleToFill" verticalCompressionResistancePriority="749" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="KfU-G6-RsR" customClass="TagListView" customModule="TagListView">
+                                <rect key="frame" x="8" y="559" width="272" height="106"/>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="textColor">
+                                        <color key="value" red="0.1960784314" green="0.21176470589999999" blue="0.23529411759999999" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="selectedTextColor">
+                                        <color key="value" red="0.87058823529999996" green="0.89411764709999997" blue="0.92941176469999998" alpha="1" colorSpace="calibratedRGB"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tagBackgroundColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tagHighlightedBackgroundColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="color" keyPath="tagSelectedBackgroundColor">
+                                        <color key="value" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="10"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingY">
+                                        <real key="value" value="12"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="paddingX">
+                                        <real key="value" value="13"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="marginY">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="marginX">
+                                        <real key="value" value="16"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" ambiguous="YES" text="Interests" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="w4S-pX-HDa">
+                                <rect key="frame" x="20" y="534" width="56.5" height="17.5"/>
+                                <fontDescription key="fontDescription" name="GTEestiProDisplay-Bold" family="GT Eesti Pro Display" pointSize="15"/>
+                                <color key="textColor" white="0.33333333329999998" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <constraints>
+                            <constraint firstItem="le6-77-lYr" firstAttribute="leading" secondItem="1Ic-Yp-KzA" secondAttribute="leading" id="06R-Zi-36x"/>
+                            <constraint firstItem="Wkb-jX-Ohm" firstAttribute="top" secondItem="dwi-mh-lAr" secondAttribute="bottom" constant="7.5" id="2Sd-6b-OYN"/>
+                            <constraint firstAttribute="trailing" secondItem="hSt-lp-QK8" secondAttribute="trailing" constant="10" id="4wp-Yk-B31"/>
+                            <constraint firstItem="KfU-G6-RsR" firstAttribute="trailing" secondItem="Wkb-jX-Ohm" secondAttribute="trailing" id="5Io-Yd-NiS"/>
+                            <constraint firstItem="1Ic-Yp-KzA" firstAttribute="trailing" secondItem="hSt-lp-QK8" secondAttribute="trailing" id="6x1-aP-12v"/>
+                            <constraint firstItem="1Ic-Yp-KzA" firstAttribute="top" secondItem="hSt-lp-QK8" secondAttribute="bottom" constant="2" id="6z9-2q-2Gf"/>
+                            <constraint firstItem="w4S-pX-HDa" firstAttribute="top" secondItem="Wkb-jX-Ohm" secondAttribute="bottom" constant="9" id="85m-Ly-P4G"/>
+                            <constraint firstItem="WEa-Km-JdV" firstAttribute="top" secondItem="YQi-0a-2sl" secondAttribute="bottom" constant="12" id="8lO-pj-fhA"/>
+                            <constraint firstItem="WEa-Km-JdV" firstAttribute="leading" secondItem="lAX-Wk-zdo" secondAttribute="leading" constant="20" id="9Gw-kT-5fr"/>
+                            <constraint firstItem="Lhg-r1-k6h" firstAttribute="leading" secondItem="le6-77-lYr" secondAttribute="trailing" constant="10" id="AMZ-74-QAG"/>
+                            <constraint firstItem="hSt-lp-QK8" firstAttribute="top" secondItem="HbS-8R-fjg" secondAttribute="bottom" constant="24" id="ATh-kr-qQB"/>
+                            <constraint firstAttribute="bottom" secondItem="KfU-G6-RsR" secondAttribute="bottom" constant="15" id="Ac8-tR-1GN"/>
+                            <constraint firstItem="dgh-kg-MXh" firstAttribute="leading" secondItem="lAX-Wk-zdo" secondAttribute="leading" id="BDt-65-muY"/>
+                            <constraint firstAttribute="trailing" secondItem="Wkb-jX-Ohm" secondAttribute="trailing" constant="10" id="E56-Zv-h3K"/>
+                            <constraint firstItem="dwi-mh-lAr" firstAttribute="leading" secondItem="ife-Pw-8tp" secondAttribute="leading" id="El3-dz-jKU"/>
+                            <constraint firstAttribute="trailing" secondItem="HbS-8R-fjg" secondAttribute="trailing" constant="8" id="Fml-ni-vVz"/>
+                            <constraint firstItem="cnd-Ma-y3Y" firstAttribute="leading" secondItem="lAX-Wk-zdo" secondAttribute="leading" id="HCu-bt-Mcd"/>
+                            <constraint firstItem="KfU-G6-RsR" firstAttribute="top" secondItem="w4S-pX-HDa" secondAttribute="bottom" constant="7.5" id="ISb-iD-Qsg"/>
+                            <constraint firstItem="Lhg-r1-k6h" firstAttribute="trailing" secondItem="1Ic-Yp-KzA" secondAttribute="trailing" id="JcN-nX-HJo"/>
+                            <constraint firstItem="Lhg-r1-k6h" firstAttribute="centerY" secondItem="le6-77-lYr" secondAttribute="centerY" id="Kbs-MO-tEW"/>
+                            <constraint firstAttribute="trailing" secondItem="YQi-0a-2sl" secondAttribute="trailing" id="L7B-pl-cYC"/>
+                            <constraint firstItem="ife-Pw-8tp" firstAttribute="leading" secondItem="WEa-Km-JdV" secondAttribute="leading" id="Oys-QD-t7f"/>
+                            <constraint firstItem="H6W-Vj-tsv" firstAttribute="leading" secondItem="ife-Pw-8tp" secondAttribute="trailing" constant="10" id="PWy-Ta-JGg"/>
+                            <constraint firstItem="H6W-Vj-tsv" firstAttribute="top" secondItem="WEa-Km-JdV" secondAttribute="bottom" constant="10" id="Pz5-1P-AsS"/>
+                            <constraint firstItem="umo-gY-KNF" firstAttribute="leading" secondItem="HbS-8R-fjg" secondAttribute="leading" id="Rnv-nr-rfg"/>
+                            <constraint firstItem="HbS-8R-fjg" firstAttribute="leading" secondItem="lAX-Wk-zdo" secondAttribute="leading" constant="8" id="Tbi-RH-FAM"/>
+                            <constraint firstItem="umo-gY-KNF" firstAttribute="top" secondItem="HbS-8R-fjg" secondAttribute="bottom" constant="20" id="USx-9E-xET"/>
+                            <constraint firstItem="1Ic-Yp-KzA" firstAttribute="leading" secondItem="hSt-lp-QK8" secondAttribute="leading" id="W1b-Yv-9YH"/>
+                            <constraint firstItem="KfU-G6-RsR" firstAttribute="leading" secondItem="Wkb-jX-Ohm" secondAttribute="leading" id="ZP9-uf-J1r"/>
+                            <constraint firstItem="w4S-pX-HDa" firstAttribute="leading" secondItem="dwi-mh-lAr" secondAttribute="leading" id="ZYU-l8-Fot"/>
+                            <constraint firstItem="ife-Pw-8tp" firstAttribute="top" secondItem="WEa-Km-JdV" secondAttribute="bottom" constant="8" id="a78-x0-G1j"/>
+                            <constraint firstAttribute="trailing" secondItem="cnd-Ma-y3Y" secondAttribute="trailing" id="aKZ-6h-fxg"/>
+                            <constraint firstItem="le6-77-lYr" firstAttribute="top" secondItem="1Ic-Yp-KzA" secondAttribute="bottom" constant="6" id="djN-Vy-L8S"/>
+                            <constraint firstItem="cnd-Ma-y3Y" firstAttribute="top" secondItem="lAX-Wk-zdo" secondAttribute="top" id="hAl-KL-cIe"/>
+                            <constraint firstItem="YQi-0a-2sl" firstAttribute="leading" secondItem="lAX-Wk-zdo" secondAttribute="leading" id="kRb-gb-DTY"/>
+                            <constraint firstItem="hSt-lp-QK8" firstAttribute="leading" secondItem="umo-gY-KNF" secondAttribute="trailing" constant="6" id="lGi-Cf-baG"/>
+                            <constraint firstItem="YQi-0a-2sl" firstAttribute="top" secondItem="umo-gY-KNF" secondAttribute="bottom" constant="20" id="o2f-E5-6bH"/>
+                            <constraint firstItem="dgh-kg-MXh" firstAttribute="top" secondItem="ife-Pw-8tp" secondAttribute="bottom" constant="20" id="pNB-i8-zvt"/>
+                            <constraint firstItem="HbS-8R-fjg" firstAttribute="top" secondItem="cnd-Ma-y3Y" secondAttribute="bottom" constant="20" id="pVP-7p-pCy"/>
+                            <constraint firstItem="dwi-mh-lAr" firstAttribute="top" secondItem="dgh-kg-MXh" secondAttribute="bottom" constant="13" id="qrB-WA-1XU"/>
+                            <constraint firstItem="Wkb-jX-Ohm" firstAttribute="leading" secondItem="lAX-Wk-zdo" secondAttribute="leading" constant="8" id="r4V-Y7-B6O"/>
+                            <constraint firstItem="H6W-Vj-tsv" firstAttribute="trailing" secondItem="WEa-Km-JdV" secondAttribute="trailing" id="s7A-gI-Bo8"/>
+                            <constraint firstAttribute="trailing" secondItem="WEa-Km-JdV" secondAttribute="trailing" constant="10" id="zQa-hA-yIk"/>
+                            <constraint firstAttribute="trailing" secondItem="dgh-kg-MXh" secondAttribute="trailing" id="zhI-2L-dAT"/>
+                            <constraint firstItem="ife-Pw-8tp" firstAttribute="width" secondItem="H6W-Vj-tsv" secondAttribute="width" multiplier="2.86364" id="zkV-0p-cvF"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.96078431369999995" green="0.96078431369999995" blue="0.96078431369999995" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstAttribute="bottom" secondItem="lAX-Wk-zdo" secondAttribute="bottom" constant="30" id="LYZ-Ti-pOY"/>
+                    <constraint firstAttribute="trailing" secondItem="lAX-Wk-zdo" secondAttribute="trailing" constant="15" id="LpN-ph-b1S"/>
+                    <constraint firstItem="lAX-Wk-zdo" firstAttribute="leading" secondItem="Nay-HF-K7v" secondAttribute="leading" constant="15" id="Og5-g9-CpX"/>
+                    <constraint firstItem="lAX-Wk-zdo" firstAttribute="top" secondItem="Nay-HF-K7v" secondAttribute="top" constant="30" id="Xy4-Ff-Nn9"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="xXE-St-IXg"/>
+            <connections>
+                <outlet property="imgOfCompany" destination="umo-gY-KNF" id="BOp-DD-9Xo"/>
+                <outlet property="imgOfUser" destination="XsC-6M-GCa" id="9q9-vC-Bkl"/>
+                <outlet property="lblAddress" destination="fiM-ZT-9tH" id="G9a-2n-am2"/>
+                <outlet property="lblCompanyName" destination="1Ic-Yp-KzA" id="bDg-51-gAA"/>
+                <outlet property="lblDate" destination="le6-77-lYr" id="kUx-eH-lSv"/>
+                <outlet property="lblDateFinish" destination="H6W-Vj-tsv" id="GNW-Vk-hSe"/>
+                <outlet property="lblDegreeProgram" destination="ife-Pw-8tp" id="k4e-Aw-Fji"/>
+                <outlet property="lblExperience" destination="HbS-8R-fjg" id="9ad-6O-fQM"/>
+                <outlet property="lblJobTitle" destination="hSt-lp-QK8" id="P7a-cj-4Mm"/>
+                <outlet property="lblNumberOfExperience" destination="9aE-tT-OBJ" id="SZa-Tl-dPP"/>
+                <outlet property="lblUniName" destination="WEa-Km-JdV" id="abK-U8-sJ6"/>
+                <outlet property="lblUserNam" destination="a5b-Xb-4F7" id="adG-Ne-rfg"/>
+                <outlet property="skillTaglist" destination="Wkb-jX-Ohm" id="2iB-xL-ZCO"/>
+                <outlet property="tagList" destination="KfU-G6-RsR" id="kFS-2J-xfO"/>
+            </connections>
+            <point key="canvasLocation" x="677" y="157"/>
+        </tableViewCell>
+    </objects>
+    <resources>
+        <image name="experience" width="15" height="13"/>
+        <image name="images" width="170.66667175292969" height="170.66667175292969"/>
+        <image name="map pin white" width="11" height="15"/>
+    </resources>
+</document>

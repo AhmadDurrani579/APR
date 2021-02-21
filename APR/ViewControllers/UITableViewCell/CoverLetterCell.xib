@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GT-Eesti-Pro-Display-Medium.ttf">
+            <string>GTEestiProDisplay-Medium</string>
+        </array>
+        <array key="GT-Eesti-Pro-Display-Regular.ttf">
+            <string>GTEestiProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="CoverLetterCell" rowHeight="297" id="KGk-i7-Jjw" customClass="CoverLetterCell" customModule="APR" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="297"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="297"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="DHU-hC-AeA" customClass="CardView" customModule="APR" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="297"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="0c7-hV-gss" customClass="CardView" customModule="APR" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="5" width="320" height="292"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="l0f-tM-o7E">
+                                        <rect key="frame" x="0.0" y="266" width="320" height="26"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="eXg-0q-wW2"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Cover Letter" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gZm-hU-jDt">
+                                        <rect key="frame" x="24" y="27" width="90" height="20"/>
+                                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Medium" family="GT Eesti Pro Display" pointSize="17"/>
+                                        <color key="textColor" red="0.19215686274509802" green="0.20784313725490194" blue="0.25882352941176467" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <textView clipsSubviews="YES" multipleTouchEnabled="YES" userInteractionEnabled="NO" contentMode="scaleToFill" editable="NO" textAlignment="natural" selectable="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Xny-fh-coe">
+                                        <rect key="frame" x="24" y="50" width="284" height="234"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <color key="textColor" red="0.19215686269999999" green="0.20784313730000001" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Regular" family="GT Eesti Pro Display" pointSize="15"/>
+                                        <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                    </textView>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstAttribute="bottom" secondItem="l0f-tM-o7E" secondAttribute="bottom" id="MSN-Bm-rk5"/>
+                                    <constraint firstAttribute="trailing" secondItem="l0f-tM-o7E" secondAttribute="trailing" id="UP5-ob-ypb"/>
+                                    <constraint firstItem="gZm-hU-jDt" firstAttribute="top" secondItem="0c7-hV-gss" secondAttribute="top" constant="27" id="Wo2-sW-yd9"/>
+                                    <constraint firstAttribute="bottom" secondItem="Xny-fh-coe" secondAttribute="bottom" constant="8" id="ZsM-gD-gj4"/>
+                                    <constraint firstItem="Xny-fh-coe" firstAttribute="top" secondItem="gZm-hU-jDt" secondAttribute="bottom" constant="3" id="k5d-cD-aIT"/>
+                                    <constraint firstItem="Xny-fh-coe" firstAttribute="leading" secondItem="0c7-hV-gss" secondAttribute="leading" constant="24" id="mL9-Fw-9I0"/>
+                                    <constraint firstAttribute="trailing" secondItem="Xny-fh-coe" secondAttribute="trailing" constant="12" id="nJC-eC-dIz"/>
+                                    <constraint firstItem="gZm-hU-jDt" firstAttribute="leading" secondItem="0c7-hV-gss" secondAttribute="leading" constant="24" id="oiz-dm-5qI"/>
+                                    <constraint firstItem="l0f-tM-o7E" firstAttribute="leading" secondItem="0c7-hV-gss" secondAttribute="leading" id="szj-Iz-FUl"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12941176469999999" green="0.76470588240000004" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="bottom" secondItem="0c7-hV-gss" secondAttribute="bottom" id="BaG-ft-FYO"/>
+                            <constraint firstItem="0c7-hV-gss" firstAttribute="leading" secondItem="DHU-hC-AeA" secondAttribute="leading" id="GYy-In-DTX"/>
+                            <constraint firstItem="0c7-hV-gss" firstAttribute="top" secondItem="DHU-hC-AeA" secondAttribute="top" constant="5" id="xNp-C7-TgK"/>
+                            <constraint firstAttribute="trailing" secondItem="0c7-hV-gss" secondAttribute="trailing" id="zRP-Il-jwf"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.12941176469999999" green="0.76470588240000004" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="DHU-hC-AeA" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" id="QdN-rj-G73"/>
+                    <constraint firstAttribute="trailing" secondItem="DHU-hC-AeA" secondAttribute="trailing" id="ba0-oN-Ly2"/>
+                    <constraint firstAttribute="bottom" secondItem="DHU-hC-AeA" secondAttribute="bottom" id="ldC-7G-6tx"/>
+                    <constraint firstItem="DHU-hC-AeA" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="nzX-fS-Iqc"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="txtCoverLetter" destination="Xny-fh-coe" id="SA8-zS-qQc"/>
+            </connections>
+            <point key="canvasLocation" x="137.68115942028987" y="142.29910714285714"/>
+        </tableViewCell>
+    </objects>
+</document>

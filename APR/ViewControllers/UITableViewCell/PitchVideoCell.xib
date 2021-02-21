@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GT-Eesti-Pro-Display-Medium.ttf">
+            <string>GTEestiProDisplay-Medium</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="PitchVideoCell" rowHeight="223" id="PfC-kK-ZJT" customClass="PitchVideoCell" customModule="APR" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="223"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="PfC-kK-ZJT" id="GaW-EH-5Ka">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="223"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="NQA-Fb-v7i" customClass="CardView" customModule="APR" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="0.0" width="320" height="223"/>
+                        <subviews>
+                            <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="4TA-Ei-QNe" customClass="CardView" customModule="APR" customModuleProvider="target">
+                                <rect key="frame" x="0.0" y="5" width="320" height="218"/>
+                                <subviews>
+                                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="GKz-EQ-JXl">
+                                        <rect key="frame" x="0.0" y="192" width="320" height="26"/>
+                                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                        <constraints>
+                                            <constraint firstAttribute="height" constant="26" id="eew-wd-xic"/>
+                                        </constraints>
+                                    </view>
+                                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Pitch Video" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="HHx-ED-1Is">
+                                        <rect key="frame" x="24" y="27" width="83.5" height="20"/>
+                                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Medium" family="GT Eesti Pro Display" pointSize="17"/>
+                                        <color key="textColor" red="0.19215686269999999" green="0.20784313730000001" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                                        <nil key="highlightedColor"/>
+                                    </label>
+                                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="IDa-89-bpR">
+                                        <rect key="frame" x="0.0" y="62" width="320" height="156"/>
+                                    </imageView>
+                                    <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pjj-ha-l3W">
+                                        <rect key="frame" x="0.0" y="62" width="320" height="156"/>
+                                        <connections>
+                                            <action selector="btnPlayVideo:" destination="PfC-kK-ZJT" eventType="touchUpInside" id="BAr-45-0sb"/>
+                                        </connections>
+                                    </button>
+                                </subviews>
+                                <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                                <constraints>
+                                    <constraint firstItem="GKz-EQ-JXl" firstAttribute="leading" secondItem="4TA-Ei-QNe" secondAttribute="leading" id="5Mk-73-GZ4"/>
+                                    <constraint firstItem="HHx-ED-1Is" firstAttribute="leading" secondItem="4TA-Ei-QNe" secondAttribute="leading" constant="24" id="7xg-Ko-yAj"/>
+                                    <constraint firstItem="IDa-89-bpR" firstAttribute="top" secondItem="HHx-ED-1Is" secondAttribute="bottom" constant="15" id="B5o-Q3-N8R"/>
+                                    <constraint firstItem="pjj-ha-l3W" firstAttribute="trailing" secondItem="IDa-89-bpR" secondAttribute="trailing" id="D5A-Co-toS"/>
+                                    <constraint firstItem="HHx-ED-1Is" firstAttribute="top" secondItem="4TA-Ei-QNe" secondAttribute="top" constant="27" id="D9i-nb-45N"/>
+                                    <constraint firstAttribute="trailing" secondItem="GKz-EQ-JXl" secondAttribute="trailing" id="Efi-k0-cza"/>
+                                    <constraint firstAttribute="bottom" secondItem="IDa-89-bpR" secondAttribute="bottom" id="IMl-3l-rWG"/>
+                                    <constraint firstItem="pjj-ha-l3W" firstAttribute="leading" secondItem="IDa-89-bpR" secondAttribute="leading" id="L5O-ke-aqq"/>
+                                    <constraint firstItem="pjj-ha-l3W" firstAttribute="bottom" secondItem="IDa-89-bpR" secondAttribute="bottom" id="Mc8-nQ-9IX"/>
+                                    <constraint firstAttribute="bottom" secondItem="GKz-EQ-JXl" secondAttribute="bottom" id="Udy-C4-qXC"/>
+                                    <constraint firstAttribute="trailing" secondItem="IDa-89-bpR" secondAttribute="trailing" id="f9Q-CL-qhX"/>
+                                    <constraint firstItem="IDa-89-bpR" firstAttribute="leading" secondItem="4TA-Ei-QNe" secondAttribute="leading" id="isV-Vw-wzA"/>
+                                    <constraint firstItem="pjj-ha-l3W" firstAttribute="top" secondItem="IDa-89-bpR" secondAttribute="top" id="wPX-lP-j0C"/>
+                                </constraints>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="30"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                            </view>
+                        </subviews>
+                        <color key="backgroundColor" red="0.12941176469999999" green="0.76470588240000004" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="4TA-Ei-QNe" secondAttribute="trailing" id="4L3-3O-nsH"/>
+                            <constraint firstAttribute="bottom" secondItem="4TA-Ei-QNe" secondAttribute="bottom" id="ZLp-jC-u5n"/>
+                            <constraint firstItem="4TA-Ei-QNe" firstAttribute="top" secondItem="NQA-Fb-v7i" secondAttribute="top" constant="5" id="gPD-8m-njr"/>
+                            <constraint firstItem="4TA-Ei-QNe" firstAttribute="leading" secondItem="NQA-Fb-v7i" secondAttribute="leading" id="yZ3-pQ-cd3"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="0.0"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <color key="backgroundColor" red="0.12941176469999999" green="0.76470588240000004" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                <constraints>
+                    <constraint firstItem="NQA-Fb-v7i" firstAttribute="leading" secondItem="GaW-EH-5Ka" secondAttribute="leading" id="0Ur-LG-018"/>
+                    <constraint firstAttribute="trailing" secondItem="NQA-Fb-v7i" secondAttribute="trailing" id="1nq-Ft-o2T"/>
+                    <constraint firstItem="NQA-Fb-v7i" firstAttribute="top" secondItem="GaW-EH-5Ka" secondAttribute="top" id="KTA-6a-lRA"/>
+                    <constraint firstAttribute="bottom" secondItem="NQA-Fb-v7i" secondAttribute="bottom" id="X2B-mk-AND"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="P9O-ri-4X4"/>
+            <connections>
+                <outlet property="imgOfVideo" destination="IDa-89-bpR" id="Z1E-9S-LMK"/>
+            </connections>
+            <point key="canvasLocation" x="11.594202898550726" y="69.977678571428569"/>
+        </tableViewCell>
+    </objects>
+</document>

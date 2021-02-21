@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="15705" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="15706"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="GT-Eesti-Pro-Display-Bold.ttf">
+            <string>GTEestiProDisplay-Bold</string>
+        </array>
+        <array key="GT-Eesti-Pro-Display-Medium.ttf">
+            <string>GTEestiProDisplay-Medium</string>
+        </array>
+        <array key="GT-Eesti-Pro-Display-Regular.ttf">
+            <string>GTEestiProDisplay-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell contentMode="scaleToFill" selectionStyle="none" indentationWidth="10" reuseIdentifier="JobFairLocationCell" rowHeight="390" id="KGk-i7-Jjw" customClass="JobFairLocationCell" customModule="APR" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="320" height="390"/>
+            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" tableViewCell="KGk-i7-Jjw" id="H2p-sc-9uM">
+                <rect key="frame" x="0.0" y="0.0" width="320" height="390"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="AVK-or-e3s">
+                        <rect key="frame" x="22" y="22" width="283" height="29"/>
+                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Bold" family="GT Eesti Pro Display" pointSize="25"/>
+                        <color key="textColor" red="0.19215686269999999" green="0.20784313730000001" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="3nQ-RI-RKL">
+                        <rect key="frame" x="0.0" y="67" width="320" height="156"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="156" id="r6W-k6-BFa"/>
+                        </constraints>
+                    </mapView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="UBG-bI-iFW">
+                        <rect key="frame" x="22" y="235" width="283" height="26"/>
+                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Regular" family="GT Eesti Pro Display" pointSize="22"/>
+                        <color key="textColor" red="0.19215686269999999" green="0.20784313730000001" blue="0.25882352939999997" alpha="1" colorSpace="calibratedRGB"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Location" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="IbY-Gu-dFC">
+                        <rect key="frame" x="22" y="268" width="283" height="26"/>
+                        <fontDescription key="fontDescription" name="GTEestiProDisplay-Regular" family="GT Eesti Pro Display" pointSize="22"/>
+                        <color key="textColor" white="0.66666666666666663" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                    <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D8t-HZ-mtO" customClass="CardView" customModule="APR" customModuleProvider="target">
+                        <rect key="frame" x="0.0" y="319" width="320" height="71"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="I7e-uJ-KbQ">
+                                <rect key="frame" x="32" y="11" width="256" height="45"/>
+                                <color key="backgroundColor" red="0.12941176469999999" green="0.76470588240000004" blue="0.92549019610000005" alpha="1" colorSpace="calibratedRGB"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="45" id="GzN-Kp-dYu"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" name="GTEestiProDisplay-Medium" family="GT Eesti Pro Display" pointSize="20"/>
+                                <state key="normal" title="Register">
+                                    <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </state>
+                                <userDefinedRuntimeAttributes>
+                                    <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                        <real key="value" value="25"/>
+                                    </userDefinedRuntimeAttribute>
+                                </userDefinedRuntimeAttributes>
+                                <connections>
+                                    <action selector="btnRegisterClick:" destination="KGk-i7-Jjw" eventType="touchUpInside" id="WE7-uv-hbK"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" systemColor="systemBackgroundColor" cocoaTouchSystemColor="whiteColor"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="I7e-uJ-KbQ" secondAttribute="trailing" constant="32" id="7V5-0U-kJL"/>
+                            <constraint firstItem="I7e-uJ-KbQ" firstAttribute="leading" secondItem="D8t-HZ-mtO" secondAttribute="leading" constant="32" id="ccr-p2-5jT"/>
+                            <constraint firstAttribute="height" constant="71" id="fsV-H6-z7F"/>
+                            <constraint firstAttribute="bottom" secondItem="I7e-uJ-KbQ" secondAttribute="bottom" constant="15" id="v5T-V6-F5M"/>
+                        </constraints>
+                        <userDefinedRuntimeAttributes>
+                            <userDefinedRuntimeAttribute type="number" keyPath="cornerRadius">
+                                <real key="value" value="10"/>
+                            </userDefinedRuntimeAttribute>
+                            <userDefinedRuntimeAttribute type="color" keyPath="shadowColor">
+                                <color key="value" cocoaTouchSystemColor="groupTableViewBackgroundColor"/>
+                            </userDefinedRuntimeAttribute>
+                        </userDefinedRuntimeAttributes>
+                    </view>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="IbY-Gu-dFC" firstAttribute="leading" secondItem="UBG-bI-iFW" secondAttribute="leading" id="25l-V2-2MO"/>
+                    <constraint firstAttribute="trailing" secondItem="3nQ-RI-RKL" secondAttribute="trailing" id="6MU-yR-dHW"/>
+                    <constraint firstAttribute="bottom" secondItem="D8t-HZ-mtO" secondAttribute="bottom" id="92h-cj-Qd8"/>
+                    <constraint firstAttribute="trailing" secondItem="D8t-HZ-mtO" secondAttribute="trailing" id="EtN-6L-whg"/>
+                    <constraint firstItem="IbY-Gu-dFC" firstAttribute="trailing" secondItem="UBG-bI-iFW" secondAttribute="trailing" id="QPs-rG-mao"/>
+                    <constraint firstItem="D8t-HZ-mtO" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="Qvy-C9-qo2"/>
+                    <constraint firstItem="UBG-bI-iFW" firstAttribute="top" secondItem="3nQ-RI-RKL" secondAttribute="bottom" constant="12" id="Spi-aE-9N0"/>
+                    <constraint firstItem="UBG-bI-iFW" firstAttribute="trailing" secondItem="AVK-or-e3s" secondAttribute="trailing" id="TBk-y3-KuT"/>
+                    <constraint firstItem="3nQ-RI-RKL" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" id="XrM-fG-K7k"/>
+                    <constraint firstItem="UBG-bI-iFW" firstAttribute="leading" secondItem="AVK-or-e3s" secondAttribute="leading" id="ikE-y0-6BN"/>
+                    <constraint firstItem="AVK-or-e3s" firstAttribute="top" secondItem="H2p-sc-9uM" secondAttribute="top" constant="22" id="isL-bA-bKo"/>
+                    <constraint firstItem="IbY-Gu-dFC" firstAttribute="top" secondItem="UBG-bI-iFW" secondAttribute="bottom" constant="7" id="lsY-9c-iAt"/>
+                    <constraint firstItem="3nQ-RI-RKL" firstAttribute="top" secondItem="AVK-or-e3s" secondAttribute="bottom" constant="16" id="oFI-Lq-Ch9"/>
+                    <constraint firstAttribute="trailing" secondItem="AVK-or-e3s" secondAttribute="trailing" constant="15" id="r9X-ZM-gvd"/>
+                    <constraint firstItem="AVK-or-e3s" firstAttribute="leading" secondItem="H2p-sc-9uM" secondAttribute="leading" constant="22" id="vcE-Vi-IRu"/>
+                </constraints>
+            </tableViewCellContentView>
+            <viewLayoutGuide key="safeArea" id="njF-e1-oar"/>
+            <connections>
+                <outlet property="btnRegister" destination="I7e-uJ-KbQ" id="M40-hl-gXL"/>
+                <outlet property="lblSubtitleLocation" destination="IbY-Gu-dFC" id="H20-Ql-V9V"/>
+                <outlet property="lblTitleLocation" destination="UBG-bI-iFW" id="udd-UF-Qmv"/>
+                <outlet property="mapView" destination="3nQ-RI-RKL" id="a0S-ZB-A2i"/>
+            </connections>
+            <point key="canvasLocation" x="-139.13043478260872" y="126.5625"/>
+        </tableViewCell>
+    </objects>
+</document>
